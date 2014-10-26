@@ -1,0 +1,297 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope);
+html,
+body {
+
+}
+body {
+  background-color: #fff;
+  background-image: url("food.png");
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5C1e1', endColorstr='#FF08B1', GradientType=1);
+}
+/* ============================================== POSITION
+*/
+.cake {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  width: 100px;
+  height: 100px;
+}
+/* ============================================== BASE
+*/
+.cake:after {
+  background: #ebe3e1;
+  border-radius: 100px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 2px;
+}
+/* ============================================== Candle
+*/
+.atas {
+  background: #ffffff;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -2.5px;
+  margin-top: -8.33333333px;
+  width: 5px;
+  height: 16.66666667px;
+}
+.atas:after,
+.atas:before {
+  background: rgba(255, 0, 0, 0.4);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.22222222px;
+}
+.atas:after {
+  top: 25%;
+  left: 0;
+}
+.atas:before {
+  top: 45%;
+  left: 0;
+}
+/* ============================================== Fire
+*/
+.lapisan {
+  border-radius: 100%;
+  box-shadow: 0 0 40px 10px rgba(248, 233, 209, 0.2);
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  margin-left: -3.33333333px;
+  width: 6.66666667px;
+  height: 12.5px;
+}
+.lapisan:nth-child(1) {
+  -webkit-animation: lapisan 2s infinite;
+  animation: lapisan 2s infinite;
+}
+.lapisan:nth-child(2) {
+  -webkit-animation: lapisan 1.5s infinite;
+  animation: lapisan 1.5s infinite;
+}
+.lapisan:nth-child(3) {
+  -webkit-animation: lapisan 1s infinite;
+  animation: lapisan 1s infinite;
+}
+.lapisan:nth-child(4) {
+  -webkit-animation: lapisan 0.5s infinite;
+  animation: lapisan 0.5s infinite;
+}
+.lapisan:nth-child(5) {
+  -webkit-animation: lapisan 0.2s infinite;
+  animation: lapisan 0.2s infinite;
+}
+/* ============================================== Animation Fire
+*/
+@-webkit-keyframes lapisan {
+  0% {
+    background: rgba(254, 248, 97, 0.5);
+    -webkit-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    background: rgba(255, 50, 0, 0.1);
+    -webkit-transform: translateY(-20px) scale(0);
+    transform: translateY(-20px) scale(0);
+  }
+  100% {
+    background: rgba(254, 248, 97, 0.5);
+    -webkit-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes lapisan {
+  0% {
+    background: rgba(254, 248, 97, 0.5);
+    -webkit-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    background: rgba(255, 50, 0, 0.1);
+    -webkit-transform: translateY(-20px) scale(0);
+    transform: translateY(-20px) scale(0);
+  }
+  100% {
+    background: rgba(254, 248, 97, 0.5);
+    -webkit-transform: translateY(0) scale(1);
+    transform: translateY(0) scale(1);
+    }f
+  }
+/* ============================================== Frosting
+*/
+.putih {
+  background: #ece7e3;
+  border-radius: 50px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  margin-left: -27.77777778px;
+  margin-top: -5px;
+  width: 55.55555556px;
+  height: 12.5px;
+  z-index: 10;
+}
+.putih:after,
+.putih:before {
+  background: #ece7e3;
+  border-radius: 100px;
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 10px;
+}
+.putih:after {
+  top: 6.66666667px;
+  right: 14.28571429px;
+}
+.putih:before {
+  top: 10px;
+  right: 9.09090909px;
+}
+/* ============================================== ROTI
+*/
+.roti {
+  background: #6d3826;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -25px;
+  width: 50px;
+  height: 33.33333333px;
+}
+.roti:after,
+.roti:before {
+  background: rgba(236, 231, 227, 0.6);
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+}
+.roti:after {
+  top: 30%;
+  left: 0;
+}
+.roti:before {
+  top: 60%;
+  left: 0;
+}
+/* ============================================== TEXT
+*/
+h1,
+.name {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+h1 {
+  color: #DBFF00;
+  font-size: 1em;
+  margin-top: 6.8em;
+}
+.name {
+  color: #DBFF00;
+  font-size: 1.2em;
+  line-height: 2em;
+}
+
+.poto {
+  background-image: url('http://tuannona.com/wp-content/uploads/2014/05/daraoctaputriofdaradise_zpsb9068229-e1401496309419-150x150.jpg');
+  background-image: url('http://tuannona.com/wp-content/uploads/2014/05/daraoctaputriofdaradise_zpsb9068229-e1401496309419-150x150.jpg');
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+
+.wish {
+  margin-top: 390px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wish #make {
+  width: 140px;
+  margin: 0px auto;
+  display: block;
+  padding: 10px 20px;
+  background-color: rgb(39, 163, 239);
+  border: none;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+.wish #make:hover {
+  background-color: rgb(21, 140, 213);
+}
+
+.wish #wish {
+  display: none;
+  margin: 10px auto;
+  width: 200px;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  border: solid 3px rgba(39, 163, 239, 0.5);
+  background-color: rgba(255, 255, 255, 0.6);
+  min-height: 80px;
+  transition: background-color 0.5s;
+}
+.wish #wish:focus {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+#handwritten {
+  line-height: 1;
+  margin-bottom: 10px;
+  width: 270px;
+  padding: 20px 10px 20px 40px;
+  background-color: #fff;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 29px, #abced4 29px, #abced4 31px, rgba(0, 0, 0, 0) 31px), linear-gradient(#e1e1e1 0.1em, rgba(0, 0, 0, 0) 0.1em);
+  background-size: 100% 1em;
+  font-size: 18px;
+  -moz-box-shadow: #ccc 3px 3px 6px;
+  -webkit-box-shadow: #ccc 3px 3px 6px;
+  box-shadow: 2px 2px 11px -1px #000;
+
+  font-family: "Annie Use Your Telescope";
+  font-weight: normal;
+  color: #777;
+}
+#handwritten em {
+  background-color: rgba(255, 247, 128, 0.7);
+  font-style: normal;
+}
+#handwritten h2 {
+  margin-top: 0px;
+  margin-bottom: 1em;
+}
+
+.canvaswrapper {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  margin-left: -150px;
+  width: 300px;
+  pointer-events:none;
+}
